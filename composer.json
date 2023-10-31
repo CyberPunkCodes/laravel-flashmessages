@@ -1,0 +1,54 @@
+{
+    "name": "cyberpunkcodes/laravel-flashmessages",
+    "description": "Add flash messages (alerts) to your Laravel project.",
+    "keywords": [
+        "laravel",
+        "flash",
+        "messages",
+        "flashmessages",
+        "alert",
+        "alerts",
+        "bootstrap"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/CyberPunkCodes/laravel-flashmessages",
+    "support": {
+        "issues": "https://github.com/CyberPunkCodes/laravel-flashmessages/issues",
+        "source": "https://github.com/CyberPunkCodes/laravel-flashmessages"
+    },
+    "authors": [
+        {
+            "name": "CyberPunkCodes"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^9.0|^10.0"
+    },
+    "autoload": {
+        "files": [
+            "src/flash-messages-helpers.php"
+        ],
+        "psr-4": {
+            "CyberPunkCodes\\FlashMessages\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CyberPunkCodes\\FlashMessages\\FlashMessagesProvider"
+            ],
+            "aliases": {
+                "FlashMessages": "CyberPunkCodes\\FlashMessages\\Facades\\FlashMessages"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
